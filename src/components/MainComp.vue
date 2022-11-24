@@ -61,5 +61,7 @@ span{
     display: flex;
     align-items: center;
 }
-
+main{
+    z-index: 1;
+}
 </style>

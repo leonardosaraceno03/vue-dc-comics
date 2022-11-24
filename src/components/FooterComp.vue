@@ -35,6 +35,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; 
+  z-index: 0;
 }
 a {
   color: white;
@@ -47,6 +48,8 @@ a {
   align-items: center;
   height: 300px; 
 }
-
+.dc-logo-bg{
+  
+}
 
 </style>
