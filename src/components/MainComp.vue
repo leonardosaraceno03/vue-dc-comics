@@ -1,7 +1,9 @@
 <template>
   <div>
+    <!-- Area fumetti -->
     <div class="magazine-container">
-        <CardComp/>
+      <!-- Singolo fumetto ciclato -->
+        <CardComp v-for="(elem,index) in comics" :key="index" :datoFumetto="elem"/>
         
     </div>
 
@@ -37,11 +39,14 @@
 </template>
 
 <script>
-import CardComp from './components/CardComp.vue'
+import CardComp from '../components/CardComp.vue'
 export default {
+    components:{
+      CardComp
+    },
   data() {
     return {
-      magazineArray: [
+      comics: [
         {
           thumb:
             "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
@@ -133,6 +138,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .container {
   background-color: #007cf2;
 }
@@ -158,5 +164,11 @@ a {
   text-decoration: none;
   color: white;
   align-items: center;
+}
+.magazine-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 50px;
 }
 </style>

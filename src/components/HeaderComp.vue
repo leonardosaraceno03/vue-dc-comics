@@ -18,7 +18,7 @@
       </div>
     </nav>
     <div class="content">
-      <div class="jumbotron">
+      <div id="jumbotron">
         <button>CURRENT SERIES</button>
       </div>
       <div class="cards">
@@ -83,7 +83,7 @@ a:hover {
 /********************
       JUMBOTRON
 *********************/
-.jumbotron{
+#jumbotron{
   background-image: url('../assets/img/jumbotron.jpg');
   height: 400px;
   background-size: cover;
@@ -91,7 +91,7 @@ a:hover {
   background-position: top;
   position: relative;
 }
-.jumbotron > button{
+#jumbotron > button{
   color: white;
   font-weight: bold;
   border: 2px solid #007cf2;

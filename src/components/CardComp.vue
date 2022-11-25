@@ -1,20 +1,25 @@
 <template>
-    <div>
-        <div>ciao</div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="fumetto">
+        <img :src="datoFumetto.thumb" alt="">
+          <h5 class="w-80">{{datoFumetto.series}}</h5>
     </div>
 </template>
 <script>
 
 
 export default {
-    props: {
-        thumb: String,
-        price: String,
-        series: String,
-        type: String,
+    props:{
+        datoFumetto:Object
     }
+    
 }
 </script>
+
+
+
+<style scoped>
+
+.w-80{
+  width: 80%;
+}
+</style>
